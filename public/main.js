@@ -15,9 +15,9 @@ function renderChat(data){
 
 function renderProducts(data){
     const html = `<tr>
-            <td>${data.title}</td>
-            <td>${data.price}</td>
-            <td><img width="77" height="77" src=${data.thumbnail}></td>
+            <td>${elem.title}</td>
+            <td>${elem.price}</td>
+            <td><img width="77" height="77" src=${elem.thumbnail}></td>
             </tr>`
     document.getElementById('tabla').innerHTML = html
 }
@@ -43,7 +43,7 @@ function addMessage(e){
     return false;
 }
 
-socket.on('nuevo-producto', data =>{
+socket.on('productos', data =>{
     fetch(data)
     .then(response => response.json())
     .then(renderProducts(data))
