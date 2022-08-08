@@ -1,5 +1,0 @@
-[
-    {author: "Juan", text: "¡Hola! ¿Que tal?"},
-    {author: "Pedro", text: "¡Muy bien! ¿Y tu?"},
-    {author: "Ana", text: "¡Genial!"}
-]
